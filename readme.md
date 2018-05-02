@@ -1,5 +1,5 @@
 # vagrant-docker-compose-webpack-dev-server
-vagrant + docker + webpack-dev-serverの開発環境を構築する。
+vagrant + docker + webpack-dev-serverの開発環境を構築する。  
 vagrantup.bat一発で済ませたい。
 
 以下のものをインストールしておく
