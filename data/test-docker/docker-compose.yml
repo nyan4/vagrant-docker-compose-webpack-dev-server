@@ -1,0 +1,12 @@
+version: '2'
+services:
+  web:
+    build: ./webpack
+    ports:
+     - "8080:8080"
+    volumes:
+     - ./src:/my_webpack/src
+     - ./dist:/my_webpack/dist
+     - ./webpack/package.json:/my_webpack/package.json
+     - ./webpack/webpack.config.js:/my_webpack/webpack.config.js
+    command: [npm, run, start]

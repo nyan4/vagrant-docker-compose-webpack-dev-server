@@ -1,0 +1,23 @@
+;; ユーザー名
+username = 'vagrant'
+
+;; 秘密鍵
+getdir dir
+keyfile = dir
+strconcat keyfile '\vagrant\.vagrant\machines\default\virtualbox\private_key'
+
+;; ホスト名
+hostname = '127.0.0.1'
+
+;; パスワード
+password = ''
+
+;; ポート
+port = ':2222'
+
+msg = hostname
+strconcat msg port
+strconcat msg ' /ssh2 /auth=publickey /user='
+strconcat msg username
+strconcat msg ' /keyfile='
+strconcat msg keyfile
